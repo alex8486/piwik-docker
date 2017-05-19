@@ -24,6 +24,6 @@ RUN mkdir -p /var/www/piwik/ \
     && chmod a+rwx /var/www/piwik/
 
 EXPOSE 5000
-USER 104
+USER 33
 
 VOLUME ["/var/www/piwik"]
