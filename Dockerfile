@@ -18,7 +18,7 @@ RUN curl -k https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz | tar zx -C /
 ADD config/default.conf /etc/nginx/conf.d/default.conf
 ADD config/php.ini /etc/php5/fpm/php.ini
 ADD entrypoint.sh /workdir/entrypoint.sh
-ADD config.ini.php /workdir/piwik/config/
+ADD config/config.ini.php /workdir/piwik/config/
 
 RUN chown -R 104:0 /var/www && chmod -R 777 /var/www && \
     chmod a+x /workdir/entrypoint.sh && chmod g+rw /workdir && \
