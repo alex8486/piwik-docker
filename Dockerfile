@@ -19,9 +19,9 @@ ADD config/default.conf /etc/nginx/conf.d/default.conf
 ADD config/php.ini /etc/php5/fpm/php.ini
 ADD entrypoint.sh /workdir/entrypoint.sh
 
-RUN mkdir -p /var/www/piwik \
-    && chown www-data:www-data /var/www/piwik \
-    && chmod a+rwx /var/www/piwik
+RUN mkdir -p /var/www/piwik/ \
+    && chown 1000510000:0 /var/www/piwik/ \
+    && chmod a+rwx /var/www/piwik/
 
 EXPOSE 5000
 USER 33
