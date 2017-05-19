@@ -22,7 +22,7 @@ ADD entrypoint.sh /workdir/entrypoint.sh
 RUN chown -R 104:0 /var/www && chmod -R 777 /var/www && \
     chmod a+x /workdir/entrypoint.sh && chmod g+rw /workdir && \
     chmod -R 777 /workdir/piwik && \
-    mkdir -p /var/www/piwik && chown -R 104:0 var/www/piwik && chmod -R 777 /var/www/
+    mkdir -p /var/www/piwik && chown -R 104:0 /var/www/piwik && chmod -R 777 /var/www/
 
 EXPOSE 5000
 USER 104
