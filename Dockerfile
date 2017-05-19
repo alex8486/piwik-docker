@@ -1,5 +1,5 @@
 FROM jubicoy/nginx-php:latest
-ENV PIWIK_VERSION latest
+ENV PIWIK_VERSION 2.14.3
 
 RUN apt-get update && apt-get install -y \
     php5-mysql php5-gd php5-ldap \
