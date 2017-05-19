@@ -1,17 +1,17 @@
 ; <?php exit; ?> DO NOT REMOVE THIS LINE
 ; file automatically generated or modified by Piwik; you can manually override the default values in global.ini.php by redefining them in this file.
 [database]
-host = "${PIWIK_DATABASE_HOST}"
-username = "${PIWIK_DATABASE_USERNAME}"
-password = "${PIWIK_DATABASE_PASSWORD}"
-dbname = "${PIWIK_DATABASE_NAME}"
-tables_prefix = "${PIWIK_DATABASE_TABLE_PREFIX}"
+host = "mysql-piwik"
+username = "piwik"
+password = "piwik"
+dbname = "piwik"
+tables_prefix = "piwik_"
 
 [General]
 proxy_client_headers[] = "HTTP_X_FORWARDED_FOR"
 proxy_host_headers[] = "HTTP_X_FORWARDED_HOST"
 salt = "da982e885973a1771751f97a0d8ac69e"
-trusted_hosts[] = "${PIWIK_TRUSTED_HOSTS}"
+trusted_hosts[] = "piwik-docker.mv.appa9.tsi-af.de"
 
 [PluginsInstalled]
 PluginsInstalled[] = "Diagnostics"
