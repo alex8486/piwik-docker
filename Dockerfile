@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
     libgeoip-dev \
     libpng12-dev \
     zip \
-    vi \
+    vim \
     && rm -rf /var/lib/apt/lists/*
 
 RUN curl -k https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz | tar zx -C /workdir/
