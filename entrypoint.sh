@@ -16,7 +16,7 @@ if [ $IS_ALREADY_INSTALLED == TRUE ]; then
   sed -i "s/DATABASE_USERNAME/${DATABASE_USERNAME}/g" /var/www/piwik/config/config.ini.php
   sed -i "s/DATABASE_PASSWORD/${DATABASE_PASSWORD}/g" /var/www/piwik/config/config.ini.php
   sed -i "s/DATABASE_NAME/${DATABASE_NAME}/g" /var/www/piwik/config/config.ini.php
-  sed -i "s/ALLOWED_HOSTNAME/${ALLOWED_HOSTNAME}/g" /var/www/piwik/config/config.ini.php
+  sed -i "s/PIWIK_URL/${PIWIK_URL}/g" /var/www/piwik/config/config.ini.php
 
 fi
 

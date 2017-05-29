@@ -12,7 +12,7 @@ charset = "utf8"
 proxy_client_headers[] = "HTTP_X_FORWARDED_FOR"
 proxy_host_headers[] = "HTTP_X_FORWARDED_HOST"
 salt = "c5b737279663343846ac974272326b4c"
-trusted_hosts[] = "ALLOWED_HOSTNAME"
+trusted_hosts[] = "PIWIK_URL"
 [mail]
 username = "MAIL_USERNAME"
 password = "MAIL_PASSWORD"
